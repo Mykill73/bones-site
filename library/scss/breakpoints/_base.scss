@@ -1,0 +1,1516 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $abel;
+	font-size: 100%;
+	line-height: 1.5;
+	color: $text-color;
+	background-color: $white;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+
+}
+.goodbutton {
+	
+	a:link {
+		color: #fff;	
+	}
+	a:visited {
+		color: #fff;	
+		}
+	a:hover {
+		color: #e2e2e2;	
+		}	
+	background: #232323;
+	padding: 10px;
+	color: #fff !important;	
+	display: inline-block;
+	} 
+*:focus {
+    outline: none;
+}
+.fl {
+	float: right !important;
+	color: $white;
+	.fa {
+	color: $mpblack;
+	font-size: 1.2em;
+	margin-left: 6px;
+	a:link {
+	color: $mpblack !important;
+	}
+	a:visited {
+	color: $mpblack !important;
+	}
+	a:hover {
+	color: $white !important;
+	}
+	}
+}
+.nudge {
+	margin-left: 5px !important; 
+}
+.uparrow {
+	background: $mpblack;
+	color: $white;
+	width: 50px;
+	height: 56px;
+	margin: 0 auto !important;
+	text-align: center !important;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 15px;
+	display: block;
+	cursor: pointer;
+	a:link {
+	color: $white;
+	.fa {
+	
+	}
+	}
+}
+#topnavvy {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 45px;
+    background: rgba(34, 34, 34, 1);
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#social {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center !important;
+	color: #fff;
+	padding-top: 10px;
+	font-size: 18px;
+	.fa {
+	padding: 10px;
+	color: #666;
+	}
+}
+.widgettitle {
+    border-bottom: 2px solid #444;
+    margin-bottom: 0.75em;
+    background: #232323;
+    color: #fff;
+    padding: 3px 7px 3px 8px !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
+}
+.resp {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-bottom: 12px;
+	outline: 1px solid transparent;
+		h2 {
+		color: #fff;
+		padding: 0 !important;
+		margin: 0 !important;
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 6px !important;
+		margin-bottom: -5px !important;
+		text-align: left !important;
+		}
+		a:link {
+		font-size: 1em;
+		}
+
+}
+.resp2 {
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: 0px;
+		h2 {
+		color: #fff;
+		padding: 0 !important;
+		margin: 0 !important;
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 6px !important;
+		margin-bottom: -5px !important;
+		text-align: left !important;
+		}
+		a:link {
+		font-size: 1em;
+		}
+}
+.fa {
+	display: inline;
+}
+.portthumb {
+	background-color: #333;
+	background-repeat: no-repeat;
+}
+
+#plus {  
+   font-family: $abel;
+   font-weight:700;
+   color:rgba(255,255,255,.85);
+   font-size:14px;
+   p {
+   margin: 0 0 5px 0 !important;
+   padding: 0;
+   }
+}
+#overlay {  
+   background:rgba(34, 34, 34, .85);
+   text-align:center;
+   padding:75px 0 75px 0;
+   opacity:1;
+   -webkit-transition: opacity .25s ease;
+   -moz-transition: opacity .25s ease;
+}
+.portthumb:hover #overlay {
+    opacity:0;
+}
+.fa-linkedin-square {
+	transition: all 0.2s linear;
+}
+.fa-linkedin-square:hover {
+	color: $white !important;
+
+} 
+.fa-youtube-square {
+	transition: all 0.2s linear;
+}
+.fa-youtube-square:hover {
+	color: $white !important;
+}
+.fa-instagram {
+	transition: all 0.2s linear;
+}
+.fa-instagram:hover {
+	color: $white !important;
+}
+#nf_submit_1 {
+	text-align: center;	
+}
+#ninja_forms_field_5 {
+background: $mpblack;
+color: $white;
+border: none;
+}	
+#home { 
+	background-color: $mpblack;
+	padding: $homepadding;
+	color: #ccc;
+		h2 {
+			text-transform: uppercase;
+		}
+		.m-all {
+	    float: none;
+	    padding-right: 0.75em;
+	    width: 92%;
+	    padding-right: 0;
+	    margin: 0 auto !important;
+		}
+		h3 {
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #fff !important;
+		}
+		a:link {
+		text-transform: uppercase;
+		}
+		.entry-content, .article-header, .article-footer {
+			background-color: $redish;
+		}
+		.hentry footer {
+		border-top: 1px solid $redish;
+		}
+		.fa {
+			color: $redish;
+			margin-right: 7px;
+		}
+		::-moz-selection { background: $redish; color: #fff; }
+		::selection { background: $redish; color: #fff; }
+}
+#featuredvideo { 
+	background-color: $mpblack;
+	padding: $videopadding;
+	color: #ccc;
+		h2 {
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 33px;
+		}
+		.m-all {
+	    float: none;
+	    padding-right: 0.75em;
+	    width: 92%;
+	    padding-right: 0;
+	    margin: 0 auto !important;
+		}
+		h3 {
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #fff !important;
+		}
+		a:link {
+		text-transform: uppercase;
+		}
+		.entry-content, .article-header, .article-footer {
+			background-color: $redish;
+		}
+		.hentry footer {
+		border-top: 1px solid $redish;
+		}
+		.fa {
+			color: $redish;
+			margin-right: 7px;
+		}
+		::-moz-selection { background: $redish; color: #fff; }
+		::selection { background: $redish; color: #fff; }
+}
+	#blogarea { 
+	background-color: $mpwhite;
+	padding: $blogpadding;
+	color: #222 !important;
+		h2 {
+			text-transform: uppercase;
+			color: $mpblack;
+			margin-bottom: 0px !important;
+			text-align: center;
+			margin-bottom: 23px !important;
+		}
+		h3 {
+		font-size: 21px;
+		font-weight: normal;
+		text-transform: none !important;
+		color: $redish !important;
+		margin-bottom: 7px !important;
+		margin-top: 0 !important; 
+		}
+		.mpdate {
+		background: $mpblack;
+		color: #fff;
+		padding: 5px 10px 5px 10px;
+		display: inline;
+		font-size: 11px;
+		text-transform: uppercase;
+		}
+		a:link {
+		text-transform: uppercase;
+		}
+		.entry-content, .article-header, .article-footer {
+			background-color: $mpblack;
+		}
+		.hentry footer {
+		border-top: 1px solid $mpblack;
+		}
+		.fa {
+		color: #333;
+		margin-right: 7px;
+		}
+		img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 0 !important;
+		}
+		::-moz-selection { background: $mpblack; color: #fff; }
+		::selection { background: $mpblack; color: #fff; }
+
+}
+#thetop {
+	position: relative;
+	margin-top: -1.5em;
+	margin-bottom: -7px;
+	background: #333;
+	padding: 240px 0 240px 0;
+	background: url('../images/contact.jpg');
+		img {
+			width: 100%;
+			height: auto;
+		}
+		button, .button {
+			background-color: $redish;
+			color: #fff;
+			border: none;
+			padding: 3px 10px 3px 10px;
+		}
+}
+#thebottom {
+	position: relative;
+	background: url('../images/contact.jpg') ;
+	padding: 30px 0 100px 0 !important;
+	color: $white;
+		h2 {
+			text-transform: uppercase;
+			text-align: center;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		button {
+			background-color: $redish;
+			color: #fff;
+			border: none;
+			padding: 3px 10px 3px 10px;
+		}
+		.d-all {
+		float: none;
+		width: 90%;
+		margin: 0 auto !important;
+		}
+		.ninja-forms-req-symbol {
+		color: $redish !important;
+		}
+}
+.center {
+   color: #fff;
+   height:300px;
+   position:absolute;
+   text-align: center;
+   z-index: 4;
+   top: 25%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   		h1 {
+   			font-size: 2em;
+   		}
+   		button {
+   			border-radius: 0;
+   		}
+}
+.roundfront {
+	width: 50px;
+	height: 50px;
+	top: 70%;
+	left: 50%;	
+	margin-top: -25px;
+	margin-left: -25px;
+	position: absolute;
+}
+.flip3d {
+	width: 50px;
+	height: 50px;
+	float: left;
+		.front {
+			background: #ccc; width: 50px; height: 50px; border-radius: 25px;
+			padding: 10px;
+			-webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-timing-function:linear;
+		    -webkit-backface-visibility: hidden;
+		    -moz-animation-duration: 1s;
+            -moz-animation-iteration-count: infinite;
+		    -moz-animation-timing-function:linear;
+		    -moz-backface-visibility: hidden;
+		    color: $white;
+		    font-family: Helvetica,Arial,sans-serif;
+		    padding: 20px;
+		    position: absolute;
+		}
+		.back {
+			background: #ddd; width: 50px; height: 50px; border-radius: 25px;
+			padding: 10px;
+			-webkit-animation-duration: 1s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-timing-function:linear;
+		    -webkit-backface-visibility: hidden;
+		    -moz-animation-duration: 1s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-timing-function:linear;
+		    -moz-backface-visibility: hidden;
+		    color: $white;
+		    font-family: Helvetica,Arial,sans-serif;
+		    padding: 20px;
+		    position: absolute;
+		}
+		@-webkit-keyframes flip1 {
+		    from { -webkit-transform: rotateY(0deg); }
+		    to { -webkit-transform: rotateY(360deg); }
+		}
+		.front {
+		    -webkit-animation-name: flip1;
+		    -moz-animation-name: flip1;
+		}
+		@-webkit-keyframes flip2 {
+		    from { -webkit-transform: rotateY(-180deg); }
+		    to { -webkit-transform: rotateY(180deg); }
+		}
+		.back {
+		    -webkit-animation-name: flip2;
+		    -moz-animation-name: flip2;
+		}
+		@-moz-keyframes flip1 {
+		  from { -moz-transform: rotateY(0deg); }
+		    to { -moz-transform: rotateY(360deg); }
+		}
+		.front {
+		    -moz-animation-name: flip1;
+		}
+		@-moz-keyframes flip2 {
+		  from { -moz-transform: rotateY(-180deg); }
+		    to { -moz-transform: rotateY(180deg); }
+		}
+		.back {
+		    -moz-animation-name: flip2;
+		}
+		@-o-keyframes NAME-YOUR-ANIMATION {
+		  0%   { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+		@keyframes NAME-YOUR-ANIMATION {
+		  0%   { opacity: 0; }
+		  100% { opacity: 1; }
+		}
+}
+
+
+    #toggle_show {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #fff;
+    cursor: pointer;
+  }
+    #toggle_hide {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #fff;
+    cursor: pointer
+  }
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
+.home {}                          /* home page */
+.blog {}                          /* blog template page */
+.archive {}                       /* archive page */
+.date {}                          /* date archive page */
+	.date-paged-1 {}                /* replace the number to the corresponding page number */
+.search {}                        /* search page */
+	.search-results {}              /* search result page */
+	.search-no-results {}           /* no results search page */
+	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
+.error404 {}                      /* 404 page */
+.single {}                        /* single post page */
+	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
+	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
+.attachment {}                    /* attatchment page */
+	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
+	.attachment-mime-type {}        /* style mime type pages */
+.author {}                        /* author page */
+	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
+	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}                      /* category page */
+	.category-1 {}                  /* individual category page (i.e. body.category-6) */
+	.category-paged-1 {}            /* replace the number to the corresponding page number */
+.tag {}                           /* tag page */
+	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
+	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
+.page-template {}                 /* custom page template page */
+	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
+	.page-paged-1 {}                /* replace the number to the corresponding page number */
+	.page-parent {}                 /* parent page template */
+	.page-child {}                  /* child page template */
+	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
+.logged-in {}                     /* if user is logged in */
+.paged {}                         /* paged items like search results or archives */
+	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $link-color;
+	text-decoration: none;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: 500;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 2em;
+	line-height: 1.333em;
+	font-family: $abel;
+	text-transform: uppercase;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	background-color: $black;
+}
+
+	#logo {
+		margin: 5px 0px 0px 10px !important;
+		height: 31px !important;
+		width: 50px !important;
+		float: right !important;
+		position: absolute !important;
+		z-index: 10000;
+		top: 0;
+		right: 0;
+
+		a {
+			color: $white;
+		}
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+
+
+.nav {
+	border-bottom: 0;
+	margin: 0;
+	font-family: $abel;
+	text-transform: uppercase;
+	display: none;
+	margin-top: 45px;
+	background-color: $darkgray;
+	margin-right: 15px;
+	
+	li {
+
+		a {
+			display: block;
+			color: $white;
+			text-decoration: none !important;
+			padding: 0.75em;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+					padding-left: 30px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	margin-top: 1.5em;
+}
+
+		.poliskey_songlr {
+			padding-top: 42px;
+			color: #333;
+			width: 94%;
+			margin: 0 auto;
+			h1 {
+			text-align: left !important;
+			}
+			.avatar {
+		    float: left;
+		    border-radius: 30px;
+		    margin-right: 7px;
+		    padding: 0;
+			}
+			.mpauthorblock {
+			padding: 15px;
+		    background: #232323;
+		    display: block;
+		    color: #ccc;
+		    font-size: .9em;
+		    line-height: 1.2em;
+		    margin: 20px 0px 20px 0px!important;
+			}
+			.mpdate, .mplink {
+			background: $mpblack;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			display: inline;
+			font-size: 11px;
+			text-transform: uppercase;
+			a:link {
+			color: #fff;
+			-moz-transition: all .2s ease-in;
+		    -o-transition: all .2s ease-in;
+		    -webkit-transition: all .2s ease-in;
+		    transition: all .2s ease-in;
+		    text-decoration: none;
+			}
+			a:visited {
+				color: #fff;
+			}
+			a:hover {
+				color: $redish;
+			}
+			}
+			.mpcategory {
+			background: #fff;
+			color: #333;
+			padding: 5px 10px 5px 7px;
+			display: inline;
+			font-size: 11px;
+			text-transform: uppercase;
+			}
+			.single-title, .page-title, .entry-title {
+		    margin: 0;
+		    text-align: left;
+		    margin-bottom: 10px;
+		    font-size: 1.6em;
+		    font-weight: bold;
+		  	a:link {
+		  	color: $mpblack;
+		  	}
+		  	a:visited {
+		  	color: $mpblack;
+		  	}
+		  	a:hover {
+		  	color: $redish;
+		  	}
+			}
+			.entry-content img {
+		    margin: 0 1em 1.2em 0;
+		    max-width: 100%;
+		    height: auto;
+		    float: left !important;
+			}
+			.entry-header img {
+		    width: 100%;
+		    height: auto;
+			}
+			.mpauthor, .mpcat {
+			background: $redish;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			display: inline;
+			font-size: 11px;
+			text-transform: uppercase;
+				a:link {
+				color: #fff;
+				-moz-transition: all .2s ease-in;
+			    -o-transition: all .2s ease-in;
+			    -webkit-transition: all .2s ease-in;
+			    transition: all .2s ease-in;
+				}
+				a:visited {
+					color: #fff;
+				}
+				a:hover {
+					color: #232323;
+				}
+			}
+			.single-title, .page-title, .entry-title {
+			/*margin-bottom: -4px !important;*/
+			font-weight: normal !important;
+			}
+		}
+		.hentry {
+			background-color: $white;
+			border-radius: 0px;
+			margin-bottom: 1.5em;
+			/*border: 1px solid $border-color;*/
+			color: #333;
+			
+
+			header {
+				/*border-bottom: 1px solid $light-gray;*/
+				padding: 0em;
+				padding-top: 1em;
+			}
+			footer {
+				padding: 0em;
+				border-top: 0px solid $light-gray;
+
+				p {
+					margin: 0;
+				}
+			}
+
+		} /* end .hentry */
+
+		.single-title,
+		.page-title,
+		.entry-title {
+			margin: 0;
+			text-align: center;
+			margin-bottom: 10px;
+			font-size: 1.6em;
+			font-weight: bold;
+		}
+
+		.single-title {}
+
+		.page-title {}
+
+		.entry-title {}
+
+		.archive-title {}
+
+		/* want to style individual post classes? Booya! */
+		.post-id {}         /* post by id (i.e. post-3) */
+		.post {}            /* general post style */
+		.page {}            /* general article on a page style */
+		.attachment {}      /* general style on an attatchment */
+		.sticky {}          /* sticky post style */
+		.hentry {}          /* hentry class */
+		.category-slug {}   /* style by category (i.e. category-videos) */
+		.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+		/* post meta */
+		.byline {
+			color: $meta-gray;
+			font-style: italic;
+			margin: 0;
+
+			time {}
+		}
+
+		/* entry content */
+		.entry-content {
+			/*padding: 1.5em 0 0;*/
+			padding: 0.1em 0 0;
+
+			p {
+				margin: 0 0 1.5em;
+			}
+
+
+			ul, ol, table, dl {}
+
+			ul, ol {
+
+				li {}
+
+			}
+
+			ul {
+
+				li {}
+
+			}
+
+			ol {
+
+				li {}
+
+			}
+
+			table {
+				width: 100%;
+				border: 1px solid $gray;
+				margin-bottom: 1.5em;
+
+				caption {
+					margin: 0 0 7px;
+					font-size: 0.75em;
+					color: $meta-gray;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+			}
+
+			tr {
+				border-bottom: 1px solid $gray;
+
+				&:nth-child(even) {
+					background-color: $light-gray;
+				}
+			}
+
+			td {
+				padding: 7px;
+				border-right: 1px solid $gray;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			th {
+				background-color: $light-gray;
+				border-bottom: 1px solid $gray;
+				border-right: 1px solid $gray;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			blockquote {
+				margin: 0 0 1.5em 0em;
+				padding: 0 0 0 1em;
+				border-left: 3px solid $gray;
+				font-style: italic;
+				color: $meta-gray;
+
+				&:before {}
+
+			}
+
+			dl {}
+
+			dt {}
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0 0 1.5em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+			.alignleft, img.alignleft {}
+			.alignright, img.alignright {}
+			.aligncenter, img.aligncenter {}
+
+			.size-auto,
+			.size-full,
+			.size-large,
+			.size-medium,
+			.size-thumbnail {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: $black;
+				color: $light-gray;
+				font-size: 0.9em;
+				padding: 1.5em;
+				margin: 0 0 1.5em;
+				border-radius: 3px;
+			}
+
+		} /* end .entry-content */
+
+		.wp-caption {
+			max-width: 100%;
+			background: #eee;
+			padding: 5px;
+
+			/* images inside wp-caption */
+			img {
+				max-width: 100%;
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			p.wp-caption-text {
+				font-size: 0.85em;
+				margin: 4px 0 7px;
+				text-align: center;
+			}
+
+		} /* end .wp-caption */
+
+		/* image gallery styles */
+		.gallery {
+
+			dl {
+
+				a {}
+
+				img {}
+
+			}
+
+			dt {}
+
+			dd {}
+
+		} /* end .gallery */
+
+		/* gallery caption styles */
+		.gallery-caption {}
+
+		.size-full {}
+		.size-large {}
+		.size-medium {}
+		.size-thumbnail {}
+
+	// the tag output
+	.tags {
+		margin: 0;
+	}
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+.pagination,
+.wp-prev-next {
+	margin: 1.5em 0;
+}
+	.pagination{
+    text-align: center;
+
+    ul {
+      display: inline-block;
+      background-color: $white;
+      white-space: nowrap;
+      padding: 0;
+      clear: both;
+      border-radius: 3px;
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden;
+      border-right: 1px solid $gray;
+    }
+
+    a, span {
+      margin: 0;
+      text-decoration: none;
+      padding: 0;
+      line-height: 1em;
+      font-size: 1em;
+      font-weight: normal;
+      padding: 0.75em;
+      min-width: 1em;
+      display: block;
+      color: $blue;
+
+      &:hover, &:focus {
+      	background-color: $blue;
+      	color: $white;
+      }
+    }
+
+    .current{
+    	cursor: default;
+    	color: $text-color;
+
+    	&:hover, &:focus {
+    		background-color: $white;
+    		color: $text-color;
+    	}
+    }
+
+  } /* end .bones_page_navi */
+
+	/* fallback previous & next links */
+	.wp-prev-next {
+
+		ul {}
+
+		.prev-link {
+			float: left;
+		}
+
+		.next-link {
+			float: right;
+		}
+
+	} /* end .wp-prev-next */
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+#comments-title {
+	padding: 0.75em;
+	margin: 0;
+	border-top: 1px solid $light-gray;
+
+	/* number of comments span */
+	span {}
+
+}
+
+.comment-nav {
+
+	ul {
+
+		li {}
+
+	}
+}
+
+
+.commentlist {
+	margin: 0;
+	list-style-type: none;
+}
+
+.comment {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 1.5em;
+	border-bottom: 1px solid $light-gray;
+
+	.comment-author {
+		padding: 7px;
+		border: 0;
+	}
+
+	/* vcard */
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			display: block;
+			font-size: 0.9em;
+			font-style: italic;
+
+			a {
+				color: $meta-gray;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		.photo {}
+
+		.avatar {
+			position: absolute;
+			left: 16px;
+			border-radius: 50%;
+		}
+
+	} /* end .commentlist .vcard */
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.children {
+		margin: 0;
+
+		li {}
+
+			/* variations */
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           /* change number for different depth */
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+	} /* end children */
+
+
+	&[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	&.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	&:not(.depth-1) {
+		margin-top: 0;
+		margin-left: 7px;
+		padding: 7px;
+	}
+
+	&.depth-2 {}
+	&.depth-3 {}
+	&.depth-4 {}
+	&.depth-5 {}
+
+	/* general comment classes */
+	&.alt {}
+	&.odd {
+		background-color: $white;
+	}
+	&.even {
+		background: $light-gray;
+	}
+	&.parent {}
+	&.comment {}
+	&.children {}
+	&.pingback {}
+	&.bypostauthor {}
+	&.comment-author {}
+	&.comment-author-admin {}
+	&.thread-alt {}
+	&.thread-odd {}
+	&.thread-even {}
+}
+
+
+
+
+	/* comment meta */
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	/* comment content */
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} /* end .commentlist .comment_content */
+
+	/* comment reply link */
+	.comment-reply-link {
+		@extend .blue-btn;
+		font-size: 0.9em;
+		float: right;
+
+		&:hover,
+		&:focus {
+		}
+
+	} /* end .commentlist .comment-reply-link */
+
+	/* edit comment link */
+	.comment-edit-link {
+		font-style: italic;
+		margin: 0 7px;
+		text-decoration: none;
+		font-size: 0.9em;
+	}
+
+
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+.comment-respond {
+	@extend .cf;
+	padding: 1.5em;
+	border-top: 1px solid $light-gray;
+}
+
+	#reply-title {
+		margin: 0;
+	}
+
+	.logged-in-as {
+		color: $meta-gray;
+		font-style: italic;
+		margin: 0;
+
+		a {
+			color: $text-color;
+		}
+	}
+
+	.comment-form-comment {
+		margin: 1.5em 0 0.75em;
+	}
+
+	.form-allowed-tags {
+		padding: 1.5em;
+		background-color: $light-gray;
+		font-size: 0.9em;
+	}
+
+	/* comment submit button */
+	#submit {
+		@extend .blue-btn;
+		float: right;
+		font-size: 1em;
+	}
+
+	/* comment form title */
+	#comment-form-title {
+		margin: 0 0 1.1em;
+	}
+
+	/* cancel comment reply link */
+	#cancel-comment-reply {
+		a {}
+	}
+
+	/* logged in comments */
+	.comments-logged-in-as {}
+
+	/* allowed tags */
+	#allowed_tags {
+		margin: 1.5em 10px 0.7335em 0;
+	}
+
+	/* no comments */
+	.nocomments {
+		margin: 0 20px 1.1em;
+	}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {}
+
+	.widgettitle {}
+
+	.widget {
+
+		ul {
+
+			li {
+				margin-bottom: 0.23em !important;
+
+				&:first-child {}
+
+				&:last-child {}
+
+				a {}
+
+				/* deep nesting */
+				ul {}
+
+			}
+
+		}
+
+	}
+
+	.no-widgets {
+		background-color: $white;
+		padding: 1.5em;
+		text-align: center;
+		border: 1px solid $border-color;
+		border-radius: 2px;
+		margin-bottom: 1.5em;
+	}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	clear: both;
+	background-color: $redish;
+	color: $light-gray;
+	.d-1of3 {
+	padding-right: 0em !important;
+	}
+
+}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+
+		ul {
+
+			li {}
+
+		}
+
+	} /* end .footer-links */
+
+
+	.copyright {}
