@@ -1,5 +1,5 @@
-# Bones
-A Lightweight Wordpress Development Theme
+# Poliskey Bones
+A Lightweight Wordpress Development Theme that I used to start building Poliskey.com.
 
 Bones is designed to make the life of developers easier. It's built
 using HTML5 & has a strong semantic foundation.
